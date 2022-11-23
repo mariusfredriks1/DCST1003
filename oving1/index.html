@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World Marius</title>
+  </head>
+  <body>
+    <h1>This is a Heading</h1>
+    <p id="tekst">This is a paragraph!</p>
+    <button id="knapp">Trykk på meg!</button>
+    <p id="dato"></p>
+
+    <button onclick="getElementById('dato').innerHTML = Date()">
+      Hvilken dato er det?
+    </button>
+
+    <script>
+      document.getElementById('knapp').onclick = () => {
+        document.getElementById('tekst').innerHTML = 'Hello World!';
+      };
+    </script>
+  </body>
+</html>
