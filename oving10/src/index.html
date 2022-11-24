@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Desktop application</title>
+  </head>
+  <style>
+    button {
+      margin: 5px;
+    }
+    input {
+      margin: 5px;
+    }
+  </style>
+  <body>
+    <!-- Students: -->
+    <ul id="studentList"></ul>
+    <br /><br />
+    Ny student:
+    <br />
+    <br />
+    <form>
+      <label>Navn: <input id="name" /> </label>
+      <br />
+      <label>Email: <input id="email" /> </label>
+      <br />
+      <button id="button">Legg til</button>
+      <br />
+      <div id="slettetDiv"></div>
+    </form>
+    <script>
+      require('@babel/register');
+      require('./index.js');
+    </script>
+  </body>
+</html>

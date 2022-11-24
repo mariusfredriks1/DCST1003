@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Øving 4</title>
+  </head>
+  <body>
+    <h2>Oppgave 10 (Frivillig)</h2>
+    <h3>Er tallet et primtall?</h3>
+    <input type="number" id="primTall" />
+    <button id="sjekk">Sjekk tall</button>
+    <div id="resultat"></div>
+  </body>
+  <script>
+    sjekk.onclick = () => {
+      let primTall = Number(document.getElementById('primTall').value);
+
+      for (let i = 2; i < primTall; i++) {
+        if (primTall % i === 0) {
+          resultat.innerText = `${primTall} er  ikke et primtall`;
+        } else resultat.innerText = `${primTall} er et primtall`;
+      }
+    };
+  </script>
+</html>
